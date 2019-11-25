@@ -8,7 +8,7 @@ feature_image: "https://picsum.photos/2560/600?image=872"
 ---
 
 ## 준비
-MultiNode를 설치를 시작하기 전에 [Hadoop-SingleNode-Install](/hadoop/2019/11/25/hadoop-singlenode-install/) 을 참고하여 SingleNode 먼저 구성후에 MultiNode를 세팅하도록 권장한다.  
+MultiNode를 설치를 시작하기 전에 [Hadoop-SingleNode-Install](/hadoop/2019/11/25/1-hadoop-singlenode-install/) 을 참고하여 SingleNode 먼저 구성후에 MultiNode를 세팅하도록 권장한다.  
 처음부터 MultiNode로 구성했을때 설정을 잘못했을 경우, 삽질!할 가능성이 있으므로 SingleNode 세팅 후 정상동작을 확인하고 MultiNode를 설정하도록 한다.
 
 
