@@ -15,7 +15,8 @@ $white: #ffffff !default;
 
 // Typography
 $bodytype: (
-  font-family: "Georgia, serif",
+  //font-family: "Georgia, serif",
+  font-family: "Spoqa Han Sans, Spoqa Han Sans JP, sans-serif",
   regular: 400,
   bold: 700,
   italic: italic,
@@ -23,17 +24,21 @@ $bodytype: (
 ) !default;
 
 $headingtype: (
-  font-family: '"Merriweather", serif',
+  //font-family: '"Merriweather", serif',
+  font-family: "Spoqa Han Sans, Spoqa Han Sans JP, sans-serif",
   regular: 400,
   bold: 700,
   cap-height: 0.75
 ) !default;
 
 $monospacetype: (
-  font-family: "Menlo, monospace",
+  //font-family: "Menlo, monospace",
+  font-family: "Spoqa Han Sans, Spoqa Han Sans JP, sans-serif",
   regular: 400,
   cap-height: 0.68
 ) !default;
 
 // Font import, if you're using a non-standard web font
-@import url("https://fonts.googleapis.com/css?family=Merriweather:400,700");
+//@import url("https://fonts.googleapis.com/css?family=Merriweather:400,700");
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css);
