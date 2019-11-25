@@ -2,6 +2,8 @@
 title: Hadoop SingleNode 설치
 categories:
 - hadoop
+feature_text: |
+  ## Hadoop SingleNode 설치
 feature_image: "https://picsum.photos/2560/600?image=872"
 ---
 
@@ -102,7 +104,9 @@ format하지 않고 실행할 경우, namenode format 어쩌구 에러를 내뱉
 namenode 및 datanode를 기동한다.  
 
 ```shell
-    $ $HADOOP_HOME/sbin/start-dfs.sh;
+    $ $HADOOP_HOME/sbin/start-dfs.sh; # namenode, datanode 같이 실행
+    $ $HADOOP_HOME/sbin/hadoop-daemon.sh start namenode; #hadoop namenode만 실행
+    $ $HADOOP_HOME/sbin/hadoop-daemon.sh start datanode; #hadoop datanode만 실행
 ```
 
 ## 확인
