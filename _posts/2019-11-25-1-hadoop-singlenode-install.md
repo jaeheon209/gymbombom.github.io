@@ -4,7 +4,7 @@ categories:
 - hadoop
 feature_text: |
   ## Hadoop SingleNode 설치
-feature_image: "https://picsum.photos/2560/600?image=872"
+feature_image: "https://picsum.photos/2560/600?image=733"
 ---
 
 ## 준비
