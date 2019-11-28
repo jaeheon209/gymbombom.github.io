@@ -1,3 +1,17 @@
 #!/bin/bash
+export OP;
 
-bundle exec jekyll serve --incremental
+while getopts il: OPT  
+do  
+  case $OPT  in
+    i) 
+        OP="$OP --incremental";
+    ;;
+    l) 
+        l="$OPTARG" 
+        OP="$OP --limit_posts $l";
+    ;;
+  esac
+done
+
+bundle exec jekyll serve $OP
