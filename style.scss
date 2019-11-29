@@ -292,19 +292,35 @@ footer {
   width: 100%;
   border: 1px solid #a8adac;
   padding: .7rem 1.2rem;
-  //transition: color .1s, background-color .1s, border .1s;
-  
-  
-  /* 
-  margin-bottom: .6rem;
-    transition: color .1s, background-color .1s, border .1s;
-    line-height: inherit;
-    border: none;
-    box-shadow: none;
-    border-radius: 0;
-    -webkit-appearance: none;
-    */
 }
+
+#back-to-top {
+  display: none; /* @@iolo: show/hide by js */
+  position: fixed;
+  width: 29px;
+  height: 29px;
+  right: 30px;
+  bottom: 20px;
+  z-index: 999;
+  background: url(images/icon_uarrow.png) no-repeat;
+  background-size: 29px 29px;
+}
+
+#back-to-top.static {
+  position: static;
+  float: right;
+  margin-top: 51px; /* 51px = 100(content-footer-spacing) - 29(self height) - 20(bottom) */
+  margin-right: 30px;
+}
+
+#back-to-top {
+      width: 36px;
+      height: 36px;
+      right: 20px;
+      background-image: url(images/icon_uarrow.png);
+      background-size: 36px 36px;
+  }
+
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
