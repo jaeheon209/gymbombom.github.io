@@ -92,4 +92,5 @@ exclude:
   - README.md
   - CNAME
   - _posts/2014-3-3-Hello-World.md
+  - run.sh
 
