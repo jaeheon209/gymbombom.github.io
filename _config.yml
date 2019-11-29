@@ -56,6 +56,8 @@ baseurl: ""
 navigation_header:
 - title: Blog
   url: /
+- title: Search
+  url: /search
 
 
 permalink: pretty
