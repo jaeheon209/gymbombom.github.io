@@ -18,11 +18,11 @@ MultiNode이므로  hadoop1 서버는 namenode 서버이고, 나머지 노드는
 필수로 이렇게 설정해야 하는건 아니고, 필요에 따라서 namenode서버만 단독으로 이용할수도 있다.  
 
 * server : 
->> hadoop1 : 192.168.0.1(namenode, datanode)  
->> hadoop2 : 192.168.0.2(datanode)  
->> hadoop3 : 192.168.0.3(datanode)  
->> hadoop4 : 192.168.0.4(datanode)  
->> hadoop5 : 192.168.0.5(datanode)  
+> hadoop1 : 192.168.0.1(namenode, datanode)  
+> hadoop2 : 192.168.0.2(datanode)  
+> hadoop3 : 192.168.0.3(datanode)  
+> hadoop4 : 192.168.0.4(datanode)  
+> hadoop5 : 192.168.0.5(datanode)  
 
 각각  node 에 /etc/hosts파일에 hostname을 등록한다.  
 필수로 해야하는건 아니지만, 등록해 놓으면 환경설정 및 배포작업시에 편리하게 이용할수 있다.  
