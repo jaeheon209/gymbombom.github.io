@@ -288,6 +288,24 @@ footer {
   text-align: center;
 }
 
+#search {
+  width: 100%;
+  border: 1px solid #a8adac;
+  padding: .7rem 1.2rem;
+  //transition: color .1s, background-color .1s, border .1s;
+  
+  
+  /* 
+  margin-bottom: .6rem;
+    transition: color .1s, background-color .1s, border .1s;
+    line-height: inherit;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    -webkit-appearance: none;
+    */
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
