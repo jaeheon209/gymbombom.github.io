@@ -58,6 +58,8 @@ navigation_header:
   url: /
 - title: Search
   url: /search
+- title: Tag
+  url: /tag
 
 
 permalink: pretty

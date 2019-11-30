@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Hadoop MultiNode 설치
+tags:
+    - hadoop
 #categories:
 #- hadoop
 #feature_text: |
