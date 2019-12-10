@@ -3,6 +3,7 @@ layout: post
 title: Hadoop SingleNode 설치
 tags :
     - hadoop
+    - 빅데이터
 #categories:
 #- hadoop
 #feature_text: |
