@@ -2,27 +2,41 @@
 layout: default
 ---
 
-<ul class="tag-cloud">
-  {% for tag in site.tags %}
-    <span style="font-size: {{ tag | last | size | times: 100 | divided_by: site.tags.size | plus: 70  }}%">
-      <a href="#{{ tag | first | slugize }}">
-        {{ tag | first }}
-      </a> &nbsp;&nbsp;
-    </span>
-  {% endfor %}
+{% if site.posts.size == 0 %}
+  <h2>No post found</h2>
+{% endif %}
+
+<div class="tags">
+  <ul class="label">
+    {% for tag in site.tags %}
+    <li>
+      <a href="#{{ tag[0] }}">
+        <span>{{ tag[0] }}</span>
+        <span class="count">{{ tag[1] | size }}</span>
+      </a>
+    </li>
+    {% endfor %}
   </ul>
-  
-  <div id="archives">
+
   {% for tag in site.tags %}
-    <div class="archive-group">
-      {% capture tag_name %}{{ tag | first }}{% endcapture %}
-      <h3 id="#{{ tag_name | slugize }}">{{ tag_name }}</h3>
-      <a name="{{ tag_name | slugize }}"></a>
-      {% for post in site.tags[tag_name] %}
-      <article class="archive-item">
-        <h4><a href="{{ root_url }}{{ post.url }}">{{post.title}}</a></h4>
-      </article>
+    <h2 id="{{ tag[0] }}">
+      {{ tag[0] }}
+    </h2>
+    <ul class="tag">
+      {% for post in tag[1] %}
+        {% if post.title != null %}
+          <li>
+            {% if post.link %}
+              <a href="{{ post.link }}">
+            {% else %}
+              <a href="{{ site.baseurl }}{{ post.url }}">
+            {% endif %}
+                {{ post.title }}
+              </a>
+              <time>{{ post.date | date: "%Y-%m-%d" }}</time>
+          </li>
+        {% endif %}
       {% endfor %}
-    </div>
+    </ul>
   {% endfor %}
-  </div>
+</div>

@@ -322,6 +322,43 @@ footer {
   }
 
 
+
+  .tags > .label > li:before {
+    content: "";
+  }
+  .tags > .label > li {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 300;
+    display: inline;
+  }
+  .tags > .label > li > a {
+    display: inline-block;
+    margin: 1px;
+    color: #343a40;
+    background-color: #e9ecef;
+    border-radius: 3px;
+  }
+  .tags > .label > li > a span {
+    float: left;
+    padding: .5px 5px;
+  }
+  .tags > .label > li > a span.count {
+    background-color: #dee2e6;
+    border-radius: 0 3px 3px 0;
+  }
+  
+  .tags > .tag a {
+    color: #343a40;
+  }
+  .tags > .tag time {
+    color: #868e96;
+    font-size: 14px;
+    font-weight: 300;
+    margin-left: 3px;
+  }
+
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
