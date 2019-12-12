@@ -7,7 +7,7 @@ tags:
 ---
 
 ## 준비
-Hadoop HA cluser를 세팅하기 전에 사전작업으로 [Hadoop-SingleNode-Install](2019/11/25/1-hadoop-singlenode-install/) => [Hadoop-multiNode-Install](2019/11/25/1-hadoop-multinode-install/) 이 구성되어 있는 상태에서 HA cluster를 세팅하는것을 권장한다.
+Hadoop HA cluser를 세팅하기 전에 사전작업으로 [Hadoop-SingleNode-Install](/2019/11/25/1-hadoop-singlenode-install/){: target="_blank"} => [Hadoop-multiNode-Install](/2019/11/25/1-hadoop-multinode-install/){: target="_blank"} 이 구성되어 있는 상태에서 HA cluster를 세팅하는것을 권장한다.
 
 
 HA(High Availability) 설정이란 active/standby 설정으로 구성하여, namenode 장애시에도 서비스가 중단되지 않도록 구성한다.
@@ -52,7 +52,7 @@ HA(High Availability) 설정이란 active/standby 설정으로 구성하여, nam
 
 ## 설치 및 세팅
 ##### zookeeper 다운로드 및 설치
-[zookeeper achrive site](https://archive.apache.org/dist/zookeeper/)에서 zookeeper download
+[zookeeper achrive site](https://archive.apache.org/dist/zookeeper/){: target="_blank"}에서 zookeeper download
 ```shell
 [aws1]$ curl -O https://archive.apache.org/dist/zookeeper/zookeeper-3.4.9/zookeeper-3.4.9.tar.gz;
 # 압축해제만 하면 설치 완료
@@ -144,7 +144,7 @@ Using config: /home/hadoop/zookeeper-3.4.9/bin/../conf/zoo.cfg
 Mode: follower
 ```
 ##### hadoop설정
-hadoop 설정은 [Hadoop-multiNode-Install](2019/11/25/1-hadoop-multinode-install/) 까지 완료되어 있는 상태에서 config에서 이미 있는 property는 수정, 없는 property는 추가되어야 한다.
+hadoop 설정은 [Hadoop-multiNode-Install](2019/11/25/1-hadoop-multinode-install/){: target="_blank"} 까지 완료되어 있는 상태에서 config에서 이미 있는 property는 수정, 없는 property는 추가되어야 한다.
 aws1에서 수정하고 모든 node에 압축하여 일괄 배포한다.
 
 masters 파일 삭제

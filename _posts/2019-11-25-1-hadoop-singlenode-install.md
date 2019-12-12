@@ -17,13 +17,13 @@ tags :
 * os : Red Hat Enterprise Linux Server 7.2 (Maipo)  
 
 나의 경우 위와 같은 환경에서 설치를 진행하였다.  
-혹시나 다른 버전의 hadoop이 필요할 경우, [hadoop Archive Realese](https://archive.apache.org/dist/hadoop/core/) 사이트에서 다운로드 받으면 된다.  
+혹시나 다른 버전의 hadoop이 필요할 경우, [hadoop Archive Realese](https://archive.apache.org/dist/hadoop/core/){: target="_blank"} 사이트에서 다운로드 받으면 된다.  
 
-hadoop version 과 java version 간 호환성에 대하여 알고 싶으면, [HadoopJavaVersions](https://cwiki.apache.org/confluence/display/HADOOP2/HadoopJavaVersions) , 또는
-[Hadoop+Java+Versions](https://cwiki.apache.org/confluence/display/HADOOP/Hadoop+Java+Versions) 에서 확인 가능하다.  
+hadoop version 과 java version 간 호환성에 대하여 알고 싶으면, [HadoopJavaVersions](https://cwiki.apache.org/confluence/display/HADOOP2/HadoopJavaVersions){: target="_blank"} , 또는
+[Hadoop+Java+Versions](https://cwiki.apache.org/confluence/display/HADOOP/Hadoop+Java+Versions){: target="_blank"} 에서 확인 가능하다.  
 
 ## 설치 및 환경파일 setting
-설치의 경우는 jdk 만 설치되어 있으면, 그냥 [hadoop Archive Realese](https://archive.apache.org/dist/hadoop/core/) 사이트에서 다운로드 받은 tar.gz 파일을 압축해제만 하면 끝이다.  
+설치의 경우는 jdk 만 설치되어 있으면, 그냥 [hadoop Archive Realese](https://archive.apache.org/dist/hadoop/core/){: target="_blank"} 사이트에서 다운로드 받은 tar.gz 파일을 압축해제만 하면 끝이다.  
 설정파일은 각 xml 파일별로 아래와 같이 설정하여 주면 된다.  
 
 * $(HADOOP_HOME)/etc/hadoop/core-site.xml  
