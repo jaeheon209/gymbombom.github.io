@@ -12,7 +12,7 @@ tags:
 ---
 
 ## 준비
-MultiNode를 설치를 시작하기 전에 [Hadoop-SingleNode-Install](/hadoop/2019/11/25/1-hadoop-singlenode-install/) 을 참고하여 SingleNode 먼저 구성후에 MultiNode를 세팅하도록 권장한다.  
+MultiNode를 설치를 시작하기 전에 [Hadoop-SingleNode-Install](2019/11/25/1-hadoop-singlenode-install/) 을 참고하여 SingleNode 먼저 구성후에 MultiNode를 세팅하도록 권장한다.  
 처음부터 MultiNode로 구성했을때 설정을 잘못했을 경우, 삽질!할 가능성이 있으므로 SingleNode 세팅 후 정상동작을 확인하고 MultiNode를 설정하도록 한다.
 
 
@@ -52,7 +52,7 @@ hadoop5  192.168.0.5
 
 
 ## 설치 및 환경파일 setting
-설치에 관한 내용은 [Hadoop-SingleNode-Install](/hadoop/2019/11/25/hadoop-singlenode-install/) 참고  
+설치에 관한 내용은 [Hadoop-SingleNode-Install](2019/11/25/1-hadoop-singlenode-install/) 참고  
 
 ssh공개키 인증을 통하여, 패스워드 없이 namenode(hadoop1)에서 각 node로 ssh 접속이 가능한지 확인한다.  
 
@@ -93,7 +93,7 @@ hadoop1$ ssh-copy-id -i ~/.ssh/id_rsa.pub hadoop@hadoop5;
 ```
 
 namenode(hadoop1) 에서 설정파일을 아래와 같이 설정한다.
-[Hadoop-SingleNode-Install](/hadoop/2019/11/25/hadoop-singlenode-install/) 에서 설정한 내용을 바탕으로 없는   
+[Hadoop-SingleNode-Install](2019/11/25/1-hadoop-singlenode-install/) 에서 설정한 내용을 바탕으로 없는   
 항목은 추가하여야 하고, 이미 설정된 항목에 대해서는 수정하여야 한다.  
 
 * $(HADOOP_HOME)/etc/hadoop/core-site.xml  
