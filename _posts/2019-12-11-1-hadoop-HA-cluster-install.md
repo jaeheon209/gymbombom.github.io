@@ -7,7 +7,7 @@ tags:
 ---
 
 ## 준비
-Hadoop HA cluser를 세팅하기 전에 사전작업으로 [Hadoop-SingleNode-Install](/2019/11/25/1-hadoop-singlenode-install/){: target="_blank"} => [Hadoop-multiNode-Install](/2019/11/25/1-hadoop-multinode-install/){: target="_blank"} 이 구성되어 있는 상태에서 HA cluster를 세팅하는것을 권장한다.
+Hadoop HA cluser를 세팅하기 전에 사전작업으로 [Hadoop-SingleNode-Install](/2019/11/25/1-hadoop-singlenode-install/){: target="_blank"} => [Hadoop-multiNode-Install](/2019/11/25/2-hadoop-multinode-install/){: target="_blank"} 이 구성되어 있는 상태에서 HA cluster를 세팅하는것을 권장한다.
 
 
 HA(High Availability) 설정이란 active/standby 설정으로 구성하여, namenode 장애시에도 서비스가 중단되지 않도록 구성한다.
