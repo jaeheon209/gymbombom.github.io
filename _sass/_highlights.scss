@@ -23,8 +23,15 @@
 
 code {
   //font-family:'Bitstream Vera Sans Mono','Courier', monospace;
-  font-family: $spoqa
+  font-family: $spoqa;
+  padding: .25em .5em;
+  font-size: .85em;
+  background-color: #efefef;
+  //background-color: rgba(0, 0, 0, 0.03);
+  color: #E53A40;
 }
+
+
 
 .highlight .c { color: #586E75 } /* Comment */
 .highlight .err { color: #93A1A1 } /* Error */
