@@ -6,8 +6,6 @@ tags :
     - github
 ---
 
-### git fork
-
 ##### 1. pull request를 요청할 repository를 fork
 github 에서 Fork 버튼을 클릭하여 pull request 할 repository를 Fork 한다.
   
