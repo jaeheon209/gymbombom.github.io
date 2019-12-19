@@ -4,3 +4,6 @@ _site/
 alembic-jekyll-theme-*.gem
 Gemfile.lock
 **/Gemfile.lock
+.jekyll-cache/
+README.md
+_posts/2019-12-11-2-oracle-how-to-use-ascii.md
