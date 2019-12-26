@@ -89,12 +89,12 @@ hadoop version 과 java version 간 호환성에 대하여 알고 싶으면, [Ha
 
 설정파일 setting 이 완료되었으면, ssh공개키 인증을 통하여, 패스워드 없이 localhost에 ssh 접속이 가능한지 확인한다.  
 ```shell
-    $ ssh localhost; #password 없이 접속 가능하다면 PASS... 그렇지 않다면 아래과정 진행
+[gymbombom@localhost~]$ ssh localhost; #password 없이 접속 가능하다면 PASS... 그렇지 않다면 아래과정 진행
 
-    #ssh 키 생성 및 공개키 배포
-    $ ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa; # ssh key 생성
-    $ cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys; #ssh 공개키 배포
-    $ chmod 0600 ~/.ssh/authorized_keys; # 파일 권한설정
+#ssh 키 생성 및 공개키 배포
+[gymbombom@localhost~]$ ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa; # ssh key 생성
+[gymbombom@localhost~]$ cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys; #ssh 공개키 배포
+[gymbombom@localhost~]$ chmod 0600 ~/.ssh/authorized_keys; # 파일 권한설정
 ```
 
 ## 실행  
@@ -102,15 +102,15 @@ hadoop version 과 java version 간 호환성에 대하여 알고 싶으면, [Ha
 format하지 않고 실행할 경우, namenode format 어쩌구 에러를 내뱉으면서 namenode 가 실행되지 않는다...
 
 ```shell
-    $ $HADOOP_HOME/bin/hdfs namenode -format;
+[gymbombom@localhost~]$ $HADOOP_HOME/bin/hdfs namenode -format;
 ```
 
 namenode 및 datanode를 기동한다.  
 
 ```shell
-    $ $HADOOP_HOME/sbin/start-dfs.sh; # namenode, datanode 같이 실행
-    $ $HADOOP_HOME/sbin/hadoop-daemon.sh start namenode; #hadoop namenode만 실행
-    $ $HADOOP_HOME/sbin/hadoop-daemon.sh start datanode; #hadoop datanode만 실행
+[gymbombom@localhost~]$ $HADOOP_HOME/sbin/start-dfs.sh; # namenode, datanode 같이 실행
+[gymbombom@localhost~]$ $HADOOP_HOME/sbin/hadoop-daemon.sh start namenode; #hadoop namenode만 실행
+[gymbombom@localhost~]$ $HADOOP_HOME/sbin/hadoop-daemon.sh start datanode; #hadoop datanode만 실행
 ```
 
 ## 확인

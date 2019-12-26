@@ -43,11 +43,11 @@ hadoop5  192.168.0.5
 /etc/hosts 에  hostname이 잘 등록되었는지 확인한다.  
 
 ```shell
-    hadoop1$ ping hadoop1;
-    hadoop1$ ping hadoop2;
-    hadoop1$ ping hadoop3;
-    hadoop1$ ping hadoop4;
-    hadoop1$ ping hadoop5;
+    [hadoop1]$ ping hadoop1;
+    [hadoop1]$ ping hadoop2;
+    [hadoop1]$ ping hadoop3;
+    [hadoop1]$ ping hadoop4;
+    [hadoop1]$ ping hadoop5;
 ```
 
 
@@ -57,11 +57,11 @@ hadoop5  192.168.0.5
 ssh공개키 인증을 통하여, 패스워드 없이 namenode(hadoop1)에서 각 node로 ssh 접속이 가능한지 확인한다.  
 
 ```shell
-hadoop1$ ssh hadoop@hadoop1;
-hadoop1$ ssh hadoop@hadoop2;
-hadoop1$ ssh hadoop@hadoop3;
-hadoop1$ ssh hadoop@hadoop4;
-hadoop1$ ssh hadoop@hadoop5;
+[hadoop1]$ ssh hadoop@hadoop1;
+[hadoop1]$ ssh hadoop@hadoop2;
+[hadoop1]$ ssh hadoop@hadoop3;
+[hadoop1]$ ssh hadoop@hadoop4;
+[hadoop1]$ ssh hadoop@hadoop5;
 ```
 
 패스워드 없이 ssh 접속이 불가능할 경우 각 node에서 ssh key 생성, namenode(hadoop1)의 ssh키를 각 node 에 배포해야 한다.  
@@ -70,26 +70,26 @@ hadoop1$ ssh hadoop@hadoop5;
 
  ```shell
  # ssh-key 생성
- hadoop1$ ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa;
+ [hadoop1]$ ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa;
  ....
- hadoop5$ ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa;
+ [hadoop5]$ ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa;
 
  # authorized_keys파일생성
- hadoop1$ touch ~/.ssh/authorized_keys;
- hadoop1$ chmod 0600 ~/.ssh/authorized_keys;
+ [hadoop1]$ touch ~/.ssh/authorized_keys;
+ [hadoop1]$ chmod 0600 ~/.ssh/authorized_keys;
  ....
- hadoop5$ touch ~/.ssh/authorized_keys;
- hadoop5$ chmod 0600 ~/.ssh/authorized_keys;
+ [hadoop5]$ touch ~/.ssh/authorized_keys;
+ [hadoop5]$ chmod 0600 ~/.ssh/authorized_keys;
  ```
 
 * namenode의 ssh 공개키를 각 노드에 배포 
 
 ```shell
-hadoop1$ ssh-copy-id -i ~/.ssh/id_rsa.pub hadoop@hadoop1;
-hadoop1$ ssh-copy-id -i ~/.ssh/id_rsa.pub hadoop@hadoop2;
-hadoop1$ ssh-copy-id -i ~/.ssh/id_rsa.pub hadoop@hadoop3;
-hadoop1$ ssh-copy-id -i ~/.ssh/id_rsa.pub hadoop@hadoop4;
-hadoop1$ ssh-copy-id -i ~/.ssh/id_rsa.pub hadoop@hadoop5;
+[hadoop1]$ ssh-copy-id -i ~/.ssh/id_rsa.pub hadoop@hadoop1;
+[hadoop1]$ ssh-copy-id -i ~/.ssh/id_rsa.pub hadoop@hadoop2;
+[hadoop1]$ ssh-copy-id -i ~/.ssh/id_rsa.pub hadoop@hadoop3;
+[hadoop1]$ ssh-copy-id -i ~/.ssh/id_rsa.pub hadoop@hadoop4;
+[hadoop1]$ ssh-copy-id -i ~/.ssh/id_rsa.pub hadoop@hadoop5;
 ```
 
 namenode(hadoop1) 에서 설정파일을 아래와 같이 설정한다.
@@ -123,7 +123,7 @@ namenode(hadoop1) 에서 설정파일을 아래와 같이 설정한다.
 masters File을 생성하고, masternode(namenode) 의 ip를 등록한다. 
 
 ```shell
-$ touch $HADOOP_HOME/etc/hadoop/masters;
+[hadoop1]$ touch $HADOOP_HOME/etc/hadoop/masters;
 ```
 
 * $HADOOP_HOME/etc/hadoop/masters  
@@ -135,7 +135,7 @@ hadoop1
 slaves File 을 생성하고, slavenode(datanode) 의 ip를 등록한다.  
 
 ```shell
-$ touch $HADOOP_HOME/etc/hadoop/slaves;
+[hadoop1]$ touch $HADOOP_HOME/etc/hadoop/slaves;
 ```
 
 * $HADOOP_HOME/etc/hadoop/slaves  
@@ -151,19 +151,19 @@ hadoop5
 설정이 완료되었으면, 설정파일을 수정한 masternode(hadoop1)에서  $HADOOP_HOME 디렉토리를 압축하여 Cluster 의 모든 Node에 배포한다.  
 
 ```shell
-hadoop1$ tar -xvf hadoop.tar $HADOOP_HOME;
+[hadoop1]$ tar -xvf hadoop.tar $HADOOP_HOME;
 
-hadoop1$ scp ./hadoop.tar hadoop@hadoop2:~/hadoop.tar;
+[hadoop1]$ scp ./hadoop.tar hadoop@hadoop2:~/hadoop.tar;
 ....
-hadoop1$ scp ./hadoop.tar hadoop@hadoop5:~/hadoop.tar;
+[hadoop1]$ scp ./hadoop.tar hadoop@hadoop5:~/hadoop.tar;
 ```
 
 masternode(hadoop1) 에서 전송받은 압축파일을 각 node에서 압축해제 한다.  
 
 ```shell
-hadoop2$ tar -cvf ~/hadoop.tar;
+[hadoop2]$ tar -cvf ~/hadoop.tar;
 ....
-hadoop5$ tar -cvf ~/hadoop.tar;
+[hadoop5]$ tar -cvf ~/hadoop.tar;
 ```
 
 ## 실행 
@@ -171,14 +171,14 @@ hadoop5$ tar -cvf ~/hadoop.tar;
 format하지 않고 실행할 경우, namenode format 어쩌구 에러를 내뱉으면서 namenode 가 실행되지 않는다...  
 
 ```shell
-hadoop1$ $HADOOP_HOME/bin/hdfs namenode -format;
+[hadoop1]$ $HADOOP_HOME/bin/hdfs namenode -format;
 ```
 
 모든 Node에서 hadoop을 실행한다. 
 
 ```shell
 # hadoop.sh 에서 masters, slaves 파일의 설정을 바탕으로 각 node 마다 알아서 namenode, datanode 가 실행된다.
-hadoop1$ $HADOOP_HOME/sbin/hadoop.sh start;
+[hadoop1]$ $HADOOP_HOME/sbin/hadoop.sh start;
 ....
-hadoop5$ $HADOOP_HOME/sbin/hadoop.sh start;
+[hadoop5]$ $HADOOP_HOME/sbin/hadoop.sh start;
 ```
