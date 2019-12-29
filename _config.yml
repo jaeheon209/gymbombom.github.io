@@ -77,6 +77,11 @@ kramdown:
     # Use existing pygments syntax highlighting css
   css_class: 'highlight'
 
+#paging
+paginate: 3
+paginate_path: "paging/page:num"
+
+
 # Set the Sass partials directory, as we're using @imports
 sass:
   style: :expanded # You might prefer to minify using :compressed
@@ -96,3 +101,4 @@ exclude:
   - _posts/2014-3-3-Hello-World.md
   - run.sh
 
+plugins: [jekyll-paginate]
