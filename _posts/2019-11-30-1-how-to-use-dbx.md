@@ -34,6 +34,17 @@ $ (dbx) stop in Equip::GetNum #CPP 함수의 경우
 # $ (dbx) stop at <filename>:<line>  <condition>  특정 조건에서으로 Break Point 설정
 $ (dbx) stop at iter.c:6  -if i == 5
 $ (dbx) stop at iter.c:6  -if strcmp(test,"test") == 0
+
+# 모든 break Point 를 보여줌.
+[gymbombom@localhost]$ status
+
+# break point 모두 삭제
+[gymbombom@localhost]$ delete all
+
+# Break Point 하나만 삭제 
+# delete <ID>
+[gymbombom@localhost]$ delete 2
+
 ``` 
 
 ### break Point 에서 기다리기
