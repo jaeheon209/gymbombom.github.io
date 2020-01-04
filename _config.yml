@@ -55,7 +55,7 @@ baseurl: ""
 
 navigation_header:
 - title: Blog
-  url: /
+  url: /blog
 - title: Search
   url: /search
 - title: Category
