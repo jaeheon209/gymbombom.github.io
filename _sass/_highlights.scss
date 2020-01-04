@@ -13,13 +13,20 @@
 */
 
 .highlight {
-  background-color: #efefef;
+  //background-color: #efefef;
+  background-color: #282b2e;
   border-radius: 3px;
   line-height: 1.4;
   margin: 0 0 1rem;
   padding: 1rem;
   overflow: auto;
 }
+
+.highlight code
+{
+  background-color: #282b2e;
+}
+
 
 code {
   //font-family:'Bitstream Vera Sans Mono','Courier', monospace;
