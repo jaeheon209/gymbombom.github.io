@@ -76,6 +76,7 @@ tags :
 [aws1]$ (gdb)info locals #local 변수들 값 모두 출력
 [aws1]$ (gdb)info variables #프로그램 내 모든변수 값 출력
 [aws1]$ (gdb) set variable = "aaa"; #변수에 값 할당 
+[aws1]$ (gdb) set p_variable = 0x00; #pointer 변수에 NULL pointer로 값 할당
 [aws1]$ (gdb) set var variable=47; #?????
 [aws1]$ (gdb) whatis variable # 변수타입확인
 [aws1]$ (gdb) q(quit) #종료
