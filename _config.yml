@@ -58,8 +58,8 @@ navigation_header:
   url: /blog
 - title: Search
   url: /search
-- title: Category
-  url: /tag
+- title: Tags
+  url: /tags
 
 
 permalink: pretty
@@ -98,7 +98,6 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
-  - _posts/2014-3-3-Hello-World.md
   - run.sh
 
 plugins: [jekyll-paginate]
