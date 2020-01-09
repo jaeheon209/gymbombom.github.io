@@ -8,8 +8,8 @@ tags :
 ---
 
 ##### 1. DBeaver 에서 Driver manager 열기
-dbeaver 에서<br>
-database - driver manager 열기<br>
+dbeaver 메뉴바 에서<br>
+`database` - `driver manager` 열기<br>
 
 ##### 2. driver manager 에서 `[new]` Click
 <img src="/images/posts/17.png" width='400' height='400'>
