@@ -7,7 +7,10 @@ layout: default
   
   <div class="date">
     Written on {{ page.date | date: "%Y-%m-%d" }}
-    <ul class="tag">
+  </div>
+
+  <div class="tags">
+    <ul class="label">
       {% for tag in page.tags %}
       <li>
         <a href="{{ site.url }}{{ site.baseurl }}/tags#{{ tag }}">
