@@ -92,6 +92,14 @@ ssh공개키 인증을 통하여, 패스워드 없이 namenode(hadoop1)에서 �
 [hadoop1]$ ssh-copy-id -i ~/.ssh/id_rsa.pub hadoop@hadoop5;
 ```
 
+* namenode에서 각 cluster node에 password 없이 접속 가능한지 확인
+```shell
+$ ssh hadoop@hadoop1;
+...
+$ ssh hadoop@hadoop5;
+```
+
+
 namenode(hadoop1) 에서 설정파일을 아래와 같이 설정한다.
 [Hadoop-SingleNode-Install](/2019/11/25/1-hadoop-singlenode-install/){: target="_blank"} 에서 설정한 내용을 바탕으로 없는   
 항목은 추가하여야 하고, 이미 설정된 항목에 대해서는 수정하여야 한다.  
