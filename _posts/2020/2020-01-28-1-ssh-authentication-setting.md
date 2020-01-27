@@ -42,6 +42,17 @@ $ ssh-copy-id -i ~/.ssh/id_rsa.pub hes@hadoop-master; #ssh 공개키 배포
 $ cat ~/id_rsa.pub >> $HOME/.ssh/authorized_keys # Server의 authorized_keys파일에 공개키 추가
 ```
 
+### ssh 패스워드 사용하여 접속하도록 설정
+```shell
+# sudo vi /etc/ssh/sshd_config
+PasswordAuthentication yes
+
+# ssh-deamon 을 restart 한다.
+$ sudo service sshd restart 
+
+```
+
+
 ### 참고
 ```shell
 # CentOS 에서는, .ssh directory를 700, authorized_keys 를 600 으로 권한 설정을 하지 않으면 동작하지 않습니다. 
