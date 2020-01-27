@@ -33,11 +33,11 @@ MultiNode이므로  hadoop1 서버는 namenode 서버이고, 나머지 노드는
 * /etc/hosts
 
 ```shell
-hadoop1  192.168.0.1
-hadoop2  192.168.0.2
-hadoop3  192.168.0.3  
-hadoop4  192.168.0.4 
-hadoop5  192.168.0.5
+192.168.0.1 hadoop1
+192.168.0.2 hadoop2
+192.168.0.3 hadoop3
+192.168.0.4 hadoop4
+192.168.0.5 hadoop5
 ```
 
 /etc/hosts 에  hostname이 잘 등록되었는지 확인한다.  
