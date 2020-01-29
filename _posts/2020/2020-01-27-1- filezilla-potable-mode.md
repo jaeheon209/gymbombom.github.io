@@ -5,8 +5,6 @@ tags :
     - filezilla
 ---
 
----
-
 ## 개요
 * filezilla portable 모드를 구성하여 설정파일을 default directory에 구성되지 않게 한다.
 
