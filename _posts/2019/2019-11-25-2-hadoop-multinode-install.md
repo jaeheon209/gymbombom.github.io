@@ -159,7 +159,7 @@ hadoop5
 설정이 완료되었으면, 설정파일을 수정한 masternode(hadoop1)에서  $HADOOP_HOME 디렉토리를 압축하여 Cluster 의 모든 Node에 배포한다.  
 
 ```shell
-[hadoop1]$ tar -xvf hadoop.tar $HADOOP_HOME;
+[hadoop1]$ tar -cvf hadoop.tar $HADOOP_HOME;
 
 [hadoop1]$ scp ./hadoop.tar hadoop@hadoop2:~/hadoop.tar;
 ....
