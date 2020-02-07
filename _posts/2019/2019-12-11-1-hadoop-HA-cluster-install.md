@@ -180,7 +180,11 @@ masters 파일 삭제
 
 ```xml
 <configuration>
- 
+    <property>
+        <name>dfs.namenode.rpc-address</name>
+        <value>0.0.0.0:8020</value>
+    </property>
+
     <!--  
       Journalnode 의 역할은 NameNode 동기화 상태를 유지한다.
       특정 시점에 구성된 fsimage snapshot 이후로 발생된 변경 사항을
@@ -401,3 +405,7 @@ active
 [aws1]$ $HADOOP_HOME/bin/hdfs haadmin -getServiceState nn2;
 standby
 ```
+
+
+### 경험
+* centos7 의 경우, fuser(yum install psmisc.x86_64)가 미설치된 경우에는 auto failover가 되지 않는다.
