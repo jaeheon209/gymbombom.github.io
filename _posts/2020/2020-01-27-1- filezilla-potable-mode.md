@@ -17,11 +17,11 @@ tags :
 OS | Location
 ---|---
 Windows | `%USERPROFILE%\AppData\Roaming\FileZilla\`
-MacOS | `NULL`
+MacOS | `$HOME/.config/filezilla`
 
 * 기본설정변경방법<br>
 1.`%FILEZILLA_HOME%\docs\fzdefaults.xml.example` 파일을 파일질라 실행파일과 동일한 장소에 `fzdefaults.xml` 의 이름으로 복사<br>
-
+(mac os 의 경우, app bundle 안쪽의 Contents/SharedSupport/ 디렉토리에 위치함.)
 2.아래  property  수정
 ```xml
     <Settings>
