@@ -9,6 +9,28 @@ tags :
 * docker 사용법 정리
 
 ---
+## 설치
+
+```shell
+sudo wget -qO- https://get.docker.com/ | sh 
+# Docker는 리눅스 배포판 종류를 자동으로 인식하여 Docker 패키지를 설치해주는 스크립트를 제공
+# 스크립트로 Docker를 설치하면  hello-world 이미지도 자동으로 설치됨.
+# hello-world 이미지가 필요없다면 삭제해야함.
+#$ sudo docker rm `sudo docker ps -aq`
+#$ sudo docker rmi hello-world 
+
+# docker daemon이 기동되어 있지 않다면 기동해 준다
+$ sudo service docker restart;
+
+```
+
+```shell
+#dial unix /var/run/docker.sock: connect: permission denied 해결방법
+$ sudo usermod -a -G docker $USER
+$ sudo service docker restart
+```
+
+---
 
 ## 설정
 
