@@ -19,6 +19,10 @@ sudo wget -qO- https://get.docker.com/ | sh
 #$ sudo docker rm `sudo docker ps -aq`
 #$ sudo docker rmi hello-world 
 
+# amazon linux에 docker  설치
+$ sudo yum update -y;
+$ sudo amazon-linux-extras install docker;
+
 # docker daemon이 기동되어 있지 않다면 기동해 준다
 $ sudo service docker restart;
 
@@ -27,7 +31,8 @@ $ sudo service docker restart;
 ```shell
 #dial unix /var/run/docker.sock: connect: permission denied 해결방법
 $ sudo usermod -a -G docker $USER
-$ sudo service docker restart
+$ sudo usermod -a -G docker `whoami`;
+
 ```
 
 ---
