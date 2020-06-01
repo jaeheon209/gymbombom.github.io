@@ -36,7 +36,7 @@ $ sudo dd if=/dev/zero of=/var/swapfile bs=1024 count=1000000;
 
 ```shell
 # mkswap <swapfilePath>
-$ mkswap /var/swapfile;
+$ sudo mkswap /var/swapfile;
 ```
 
 * swapfile 권한변경
