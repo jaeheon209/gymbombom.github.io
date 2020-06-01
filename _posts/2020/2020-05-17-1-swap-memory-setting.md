@@ -18,7 +18,7 @@ tags :
 
 ```shell
 # swapmemory 설정 상태를 확인한다.(아래 command 3개중 하나로)
-$ swapon –s;
+$ swapon -s;
 $ free;
 $ cat /proc/swaps;
 ```
