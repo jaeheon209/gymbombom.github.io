@@ -34,7 +34,10 @@ $ sudo service docker restart;
 ```shell
 #dial unix /var/run/docker.sock: connect: permission denied 해결방법
 $ sudo usermod -a -G docker $USER
+#or
 $ sudo usermod -a -G docker `whoami`;
+#or 
+$ sudo chmod 666 /var/run/docker.sock;
 
 ```
 
