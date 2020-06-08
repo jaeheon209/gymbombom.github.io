@@ -23,6 +23,9 @@ sudo wget -qO- https://get.docker.com/ | sh
 $ sudo yum update -y;
 $ sudo amazon-linux-extras install docker;
 
+# centos7 에 docker 설치
+$ yum -y install docker docker-registry;
+
 # docker daemon이 기동되어 있지 않다면 기동해 준다
 $ sudo service docker restart;
 
