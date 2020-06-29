@@ -74,6 +74,19 @@ $ echo "swapon /var/swapfile" >> /etc/rc.d/rc.local;
 ---
 
 ## 경험
+* 라즈베리파이3에서 swap memory 설정
+```shell
+# sudo vi /etc/dphys-swapfile
+
+# swapfile위치설정
+CONF_SWAPFILE=/var/swapfile
+
+#swap size설정
+CONF_SWAPSIZE=4000
+
+# max swap size 설정
+CONF_MAXSWAP=4000
+```
 
 ---
 
