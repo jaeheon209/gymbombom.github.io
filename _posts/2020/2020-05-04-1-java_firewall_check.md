@@ -96,6 +96,6 @@ Exception in thread "main" java.net.SocketTimeoutException: connect timed out
 ---
 
 ## Links
-[java - telnet 대신 포트 방화벽 확인하기 port check](https://goni9071.tistory.com/m/78) 
+[java - telnet 대신 포트 방화벽 확인하기 port check](https://goni9071.tistory.com/m/78){: target="_blank"} 
 
 ---

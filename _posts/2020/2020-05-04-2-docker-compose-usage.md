@@ -91,8 +91,8 @@ $ docker-compose down;
 ---
 
 ## Links
-[visual studio code에서 docker로 jekyll 블로그 로컬 환경 만들기](https://velog.io/@jundragon/visual-studio-code%EC%97%90%EC%84%9C-docker%EB%A1%9C-jekyll-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A1%9C%EC%BB%AC-%ED%99%98%EA%B2%BD-%EB%A7%8C%EB%93%A4%EA%B8%B0)<br>
-[DOCKER COMPOSE 기초사용법](https://seulcode.tistory.com/238)<br>
-[docker compose yaml 파일 작성](https://hoony-gunputer.tistory.com/entry/docker-compose-yaml-%ED%8C%8C%EC%9D%BC-%EC%9E%91%EC%84%B1)<br>
+[visual studio code에서 docker로 jekyll 블로그 로컬 환경 만들기](https://velog.io/@jundragon/visual-studio-code%EC%97%90%EC%84%9C-docker%EB%A1%9C-jekyll-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A1%9C%EC%BB%AC-%ED%99%98%EA%B2%BD-%EB%A7%8C%EB%93%A4%EA%B8%B0){: target="_blank"}<br>
+[DOCKER COMPOSE 기초사용법](https://seulcode.tistory.com/238){: target="_blank"}<br>
+[docker compose yaml 파일 작성](https://hoony-gunputer.tistory.com/entry/docker-compose-yaml-%ED%8C%8C%EC%9D%BC-%EC%9E%91%EC%84%B1){: target="_blank"}<br>
 
 ---

@@ -38,8 +38,8 @@ MacOS | `$HOME/.config/filezilla`
 ---
 
 ## Links
-[Portable mode client installation](https://wiki.filezilla-project.org/Portable_mode_client_installation)  
-[Download FileZilla Client](https://filezilla-project.org/download.php?show_all=1)
+[Portable mode client installation](https://wiki.filezilla-project.org/Portable_mode_client_installation){: target="_blank"}  
+[Download FileZilla Client](https://filezilla-project.org/download.php?show_all=1){: target="_blank"}
 ---
 
 

@@ -67,8 +67,8 @@ $ find /home -name *user* --exec rm -rf {} \;
 ---
 
 ## Links
-[리눅스 find - 파일 검색](https://webdir.tistory.com/155)  
-[리눅스 n일 이내에 수정된 파일 찾기](https://zetawiki.com/wiki/리눅스_n일_이내에_수정된_파일_찾기)
+[리눅스 find - 파일 검색](https://webdir.tistory.com/155){: target="_blank"}  
+[리눅스 n일 이내에 수정된 파일 찾기](https://zetawiki.com/wiki/리눅스_n일_이내에_수정된_파일_찾기){: target="_blank"}
 
 ---
 

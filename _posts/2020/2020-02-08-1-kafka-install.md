@@ -173,6 +173,6 @@ $  $KAFKA_HOME/bin/kafka-console-consumer.sh --from-beginning --new-consumer --b
 ---
 
 ## Links
-[카프카(Kafka)를 설치(Install)해보자](https://yookeun.github.io/kafka/2018/07/01/kafka-install/)  
+[카프카(Kafka)를 설치(Install)해보자](https://yookeun.github.io/kafka/2018/07/01/kafka-install/){: target="_blank"}  
 
 ---
