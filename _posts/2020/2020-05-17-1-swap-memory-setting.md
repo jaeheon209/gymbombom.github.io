@@ -75,6 +75,7 @@ $ echo "swapon /var/swapfile" >> /etc/rc.d/rc.local;
 
 ## 경험
 * 라즈베리파이3에서 swap memory 설정
+
 ```shell
 # sudo vi /etc/dphys-swapfile
 
