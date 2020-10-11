@@ -27,6 +27,8 @@ $ commands
 
 ```
 
+<img src="/aaa/bbb/11.png">
+![](/aaa/bbb/9.png)
 ---
 
 ## 사용예
@@ -44,7 +46,7 @@ $ commands
 ---
 
 ## Links
-[https://linkpath](링크 설명){: target="_blank"}<br> 
+[링크설명](https://linkpath){: target="_blank"}<br> 
 
 ---
 
