@@ -62,6 +62,13 @@ $ docker network create --subnet 14.63.156.0/24 hes-network
 $ docker run -dit --privileged -d --name hadoop --network centos-cluster -p 12345:8088 --ip 10.0.3.2 --add-host=hadoop:10.0.3.2 --add-host=hadoop01:10.0.3.3 --add-host=hadoop02:10.0.3.4 --add-host=hadoop03:10.0.3.5 centos7/hadoop-cluster--이미지명 /bin/bash init
 ```
 
+* docker exec 명령으로 nohup 실행방법
+
+```shell
+# docker exec 사용 시, 내부 컨테이너안으로 nohup 명령어를 실행하는 방법
+# docker exec -it running_container bash -c 'nohup ./main.sh &> output & sleep 1'
+# docker exec  vsftpd /bin/ash -c '/usr/bin/nohup /usr/sbin/vsftpd  /home/vsftpd/share/conf/vsftpd.conf >> /home/vsftpd/share/logs/vsftpd.log &> output & sleep 1';
+```
 
 ---
 
@@ -70,6 +77,7 @@ $ docker run -dit --privileged -d --name hadoop --network centos-cluster -p 1234
 ---
 
 ## Links
+[Why docker exec is killing nohup process on exit?](https://stackoverflow.com/questions/33732061/why-docker-exec-is-killing-nohup-process-on-exit){: target="_blank"}
 
 ---
 
